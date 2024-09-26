@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector de Color - Wolverine</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- Google Fonts - Wolverine Style -->
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&display=swap" rel="stylesheet">
+    <!-- Tu archivo de estilos CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center wolverine-title mb-4">Wolverine Color Picker</h1>
+
+        <!-- Color Picker -->
+        <div class="form-group text-center">
+            <label for="inputColorPicker" class="wolverine-label">Selecciona un color:</label>
+            <input type="color" class="form-control color-picker" id="inputColorPicker" value="#000000">
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <!-- Controles de rango para los colores -->
+                <div class="form-group">
+                    <label for="inputRed" class="wolverine-label">Rojo (0-255)</label>
+                    <input type="range" class="form-control-range wolverine-slider" id="inputRed" min="0" max="255" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="inputGreen" class="wolverine-label">Verde (0-255)</label>
+                    <input type="range" class="form-control-range wolverine-slider" id="inputGreen" min="0" max="255" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="inputBlue" class="wolverine-label">Azul (0-255)</label>
+                    <input type="range" class="form-control-range wolverine-slider" id="inputBlue" min="0" max="255" value="0">
+                </div>
+            </div>
+            <div class="col-md-6">
+                <!-- Campos numéricos para los valores RGB -->
+                <div class="form-group">
+                    <label for="inputRedText" class="wolverine-label">Rojo (0-255)</label>
+                    <input type="number" class="form-control wolverine-input" id="inputRedText" min="0" max="255" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="inputGreenText" class="wolverine-label">Verde (0-255)</label>
+                    <input type="number" class="form-control wolverine-input" id="inputGreenText" min="0" max="255" value="0">
+                </div>
+                <div class="form-group">
+                    <label for="inputBlueText" class="wolverine-label">Azul (0-255)</label>
+                    <input type="number" class="form-control wolverine-input" id="inputBlueText" min="0" max="255" value="0">
+                </div>
+            </div>
+        </div>
+
+        <div class="mt-4 text-center">
+            <h3 class="wolverine-label">Color Resultante</h3>
+            <div id="colorResult" class="color-box"></div>
+            <h3 class="mt-4 wolverine-label">Código Hexadecimal</h3>
+            <div id="hexCode" class="hex-code mb-4"></div>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@1.16.0/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- Tu archivo de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>

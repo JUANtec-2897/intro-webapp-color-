@@ -1,0 +1,54 @@
+/* Wolverine Colors and Styling */
+
+body {
+    background-color: #1c1e21; /* Fondo oscuro estilo Wolverine */
+    color: #f9f9f9; /* Texto claro */
+}
+
+.wolverine-title {
+    font-family: 'Bangers', cursive;
+    color: #fddb3a; /* Amarillo Wolverine */
+    text-shadow: 3px 3px 0px #002984; /* Sombra azul Wolverine */
+}
+
+.wolverine-label {
+    font-family: 'Bangers', cursive;
+    color: #fddb3a;
+}
+
+.wolverine-slider {
+    accent-color: #fddb3a; /* Amarillo Wolverine */
+    background-color: #002984; /* Azul Wolverine */
+    border-radius: 5px;
+}
+
+.wolverine-input {
+    background-color: #fddb3a;
+    border: 2px solid #002984;
+    color: #002984;
+    font-weight: bold;
+}
+
+.color-picker {
+    max-width: 150px;
+    margin: 0 auto;
+    border: 3px solid #fddb3a;
+    border-radius: 5px;
+}
+
+.color-box {
+    width: 150px;
+    height: 150px;
+    border: 3px solid #fddb3a; /* Bordes amarillos */
+    margin: 0 auto;
+}
+
+.hex-code {
+    font-size: 24px;
+    color: #fddb3a;
+    background-color: #002984;
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+    font-family: 'Bangers', cursive;
+}
